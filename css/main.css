@@ -102,8 +102,8 @@ header .Justifed-nav{
     position: fixed;
     width: 100%;
     padding: 15px 0;
-    background-color: rgba(0, 0, 0, 0.0233);
-    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.043);
+    backdrop-filter: blur(1px);
 }
 
 header nav.sticky {
@@ -213,11 +213,21 @@ header .home .home-caption h1{
     font-weight: 900 !important;
 }
 
+@media ( max-width: 460px ) {
+    header .home .home-caption h1{
+        font-size: 3rem ;
+        font-weight: 900 !important;
+    }
+     header #page-top h3 {
+        font-size:2rem !important;
+    } 
+    header #page-top h3 {
+        width: 100%;
+    } 
+    
+}
     
 
-header #page-top h3 {
-    font-size:4.5rem !important;
-}
 
 header .home-caption .home-icon .icon {
     background-color:#0808087e;
