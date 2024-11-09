@@ -63,8 +63,6 @@ span{   font-family: "Montserrat", sans-serif;
 
 
 
-
-
 /*  ============= fixed header ============== */
 
 .headof {
@@ -209,7 +207,7 @@ header .home .home-caption{
 }
 
 header .home .home-caption h1{
-    font-size: 4rem ;
+    font-size: 3rem ;
     font-weight: 900 !important;
 }
 
@@ -227,7 +225,9 @@ header .home .home-caption h1{
     
 }
     
-
+header #page-top h3 {
+    font-size:3rem !important;
+} 
 
 header .home-caption .home-icon .icon {
     background-color:#0808087e;
