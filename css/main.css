@@ -100,14 +100,16 @@ header .Justifed-nav{
     position: fixed;
     width: 100%;
     padding: 15px 0;
-    background-color: rgba(0, 0, 0, 0.043);
-    backdrop-filter: blur(1px);
+
+   /* background-color: rgba(0, 0, 0, 0.013);  */
+    backdrop-filter: blur(1px); */
 }
 
 header nav.sticky {
     background-color: rgba(255, 255, 255, 0.616); 
     box-shadow:  0 0 15px rgba(0, 0, 0, 0.233);
     transition: all 0.5s ease;
+    backdrop-filter: blur(15px); 
     padding: 8px 0;
 
 }
@@ -121,6 +123,12 @@ header nav.sticky .logo
 
 
 
+
+header .nav-list{
+    background-color: rgb(255, 102, 0) ;
+    color: var(--bg-light-clr);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.433);
+}
     
 
 header .Justifed-nav .logo,
@@ -144,6 +152,25 @@ header .Justifed-nav ul li a
 }
 .Justifed-nav .container ul li a:hover{
     color: var(--bg-light-clr);
+}
+
+@media (max-width:989px) {
+    
+    .Justifed-nav .container ul li a{
+        padding-top: 20px ;
+    }
+    .Justifed-nav .container ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 0 ;
+
+    }
+    .Justifed-nav {
+        backdrop-filter: blur(15px) !important; 
+    }
+    
 }
 
 
@@ -207,26 +234,26 @@ header .home .home-caption{
 }
 
 header .home .home-caption h1{
-    font-size: 3rem ;
+    font-size: 2.8rem ;
     font-weight: 900 !important;
 }
 
 @media ( max-width: 460px ) {
     header .home .home-caption h1{
-        font-size: 3rem ;
+        font-size: 2rem ;
         font-weight: 900 !important;
     }
-     header #page-top h3 {
-        font-size:2rem !important;
-    } 
+
     header #page-top h3 {
-        width: 100%;
+
+        font-size: 1.9rem !important;
+
     } 
     
 }
     
 header #page-top h3 {
-    font-size:3rem !important;
+    font-size:3rem ;
 } 
 
 header .home-caption .home-icon .icon {
